@@ -6,11 +6,13 @@
     <title>HTML Form</title>
 </head>
 <body>
-    <form action="">
-        <label for="">Name:</label> <br>
-        <input type="text"> <br>
-        <label for="">Password:</label><br>
-        <input type="password"><br>
+    <!-- post method: use when send data from frontend to backend -->
+    <!-- get method: use when fetch/retrive/get  data from backend to frontend -->
+    <!-- <form action="htttp://www.example.com/submit" method="post">
+        <label for="name">Name:</label> <br>
+        <input id="name" type="text" placeholder="Enter your name" required> <br>
+        <label for="password">Password:</label><br>
+        <input id="password" type="password" required><br>
         <label for="">Gender:</label><br>
         <input type="radio" name="Gender" value="male"> Male 
         <input type="radio" name="Gender" value="female"> Female <br>
@@ -21,12 +23,39 @@
 
         <label for="">Country:</label><br>
         <select name="" id="">
-            <option value="">Pakistan</option>
+            <option value="" >Pakistan</option>
             <option value="">India</option>
             <option value="">Suadi Arab</option>
-            <option value="">Dubai</option>
+            <option value="" selected>Dubai</option>
         </select>
+        <br>
+        <label for="">Description:</label><br>
+        <textarea name="" id="" cols="50" rows="20"></textarea><br>
+
+        <input type="file" accept="image/*">
+        <input type="submit">
+    </form> -->
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label> <br>
+            <input id="name" type="text" placeholder="Enter your name" > <br>
+            <label for="password">Age</label><br>
+            <input id="password" type="number" ><br>
+            <label for ="">Gender:</label><br>
+            <input type="radio" name="Gender" value="male"> Male            
+            <input type="radio" name="Gender" value="female"> Female
+            <br>
+            <input type="date"><br>
+            <label for="">Favorite Color</label><br>
+            <input type="color"> <br>
+            <input type="url" required placeholder="Enter your website url"><br>
+            <input type="submit" value="Submit Form">
+            <br>
+            <input type="search" placeholder="Search...">
+        </fieldset>
     </form>
+
 </body>
 </html>
 
